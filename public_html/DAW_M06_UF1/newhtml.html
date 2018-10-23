@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DAW_M06_T02_ACT_01_Raúl_Gutiérrez_Cecilia</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script type="text/javascript">
+            window.document.write("<b>Document.write</b> nos permite escribir texto o tags HTML ");
+            window.document.write("pero solo mientras se carga la web. ");
+            window.document.write("Si lo utilizamos una vez cargada la web, se borrará todo el contenido HTML");
+        </script>
+        
+        <h1 id="titulo">DEPURAR EL CODIGO JAVASCRIPT </h1>
+        <p id="contenido"></p>      
+        <!-- al clicar sobre un DIV llamamos a la función "saluda()" -->
+        <div id="saluda" onclick="saluda('cuidado con las mayusculas');">SALUDA</div>
+        <script src="modificarHTML.js" type="text/javascript"></script>  
+
+        <h2>MENU JAVASCRIPT</h2>
+        <h4 onclick="seleccionaPrimero()">CLICK PARA SELECCIONAR EL PRIMERO</h4>
+        <h4 onclick="seleccionaSegundo()">CLICK PARA SELECCIONAR EL SEGUNDO</h4>
+
+        <div id="miPrimero"></div>
+        <div id="miSegundo"></div>
+        <script src="seleccionaMenu.js" type="text/javascript"></script>    
+    </body>
+</html>
