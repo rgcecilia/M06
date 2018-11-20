@@ -4,8 +4,8 @@ function Alumno(){
 //CLASES
 function MiClase(){
     this.alumnos=[];
-        var alumno1 = new Alumno();
-        this.alumnos.push(alumno1);
+    var alumno1 = new Alumno();
+    this.alumnos.push(alumno1);
     
     this.numeroAlumnos="10";
     this.nombre="Los patitos felices";

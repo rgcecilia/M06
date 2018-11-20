@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+    Daw M06 ACT 04 Raúl Gutiérrez Cecilia
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="formulario.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="formulario.css"/>
+    </head>
+    <body onload="ini();">
+        <div class="form-group col-md-8 col-md-offset-2 text-center">
+        <form name="miForm" onsubmit="return validaSubmit();" role="form" class="form">
+            <h3> DAW M06 ACT 04 Raúl Gutiérrez Cecilia </h3>
+            Nombre de Producto : <input type="text" name="inputNombre" maxlength="20" class="form-control"/>
+            Codigo de Barras   : <input type="text" name="inputCodigo" maxlength="13" class="form-control"/>
+            <h5>Fecha de caducidad : </h5>
+            <div class="form-inline">   
+            Dia: <input type="text" name="inputDia" maxlength="2" class="checkbox" />
+            Mes: <input type="text" name="inputMes" maxlength="2" class="checkbox" />
+            Año: <input type="text" name="inputAño" maxlength="4" class="checkbox" />
+            <div>
+            <br/>
+            <div class="form-inline">   
+            Oferta :
+            <select name="oferta" class="form-control">
+                <option value="nomal">Normal</option>
+                <option value="2x1">2x1</option>
+                <option value="10">10%</option>
+                <option value="20">20%</option>
+            </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Congelado: <input type="checkbox" value="Congelado" name="checks" id="1" class="form-control"/>&nbsp;
+            Fruta    : <input type="checkbox" value="fruta" name="checks" id="2" class="form-control"/>&nbsp;
+            Snack    : <input type="checkbox" value="Snack" name="checks" id="3" class="form-control"/>
+            </div>
+            <br/>
+            <br/>
+            <div class="form-group">
+            <input type="submit" value="Registrate" onclick="return validaSubmit();" class="btn btn-primary"/>
+            <input type="reset"  value="Limpia el Formulario" onclick="limpia();" class="btn btn-success"/>
+            <input type="submit" value="Guardar Datos" onclick="return guarda()" class="btn btn-warning"/>
+            <input type="button" value="Recuperar Datos" onclick="recupera();" class="btn btn-info"/>
+            </div>
+            <br/>
+            <br/>
+            <textarea id="muestra" name="comment" class="form-control" style="min-width: 100%" rows="3" ></textarea>       
+        </form>
+        </div>
+    </body >
+</html>
