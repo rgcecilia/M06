@@ -37,8 +37,7 @@ function listaPropiedades(){
 
 function miCookie(){ 
     var nombre = document.getElementById('nombre');
-    document.cookie = "nombre_usuario=" + nombre.value;
-   
+    document.cookie = "nombre_usuario=" + nombre.value; 
 }
 
 function getValorCookie(){
