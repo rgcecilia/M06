@@ -1,7 +1,7 @@
 
 
 var x = Math.floor((Math.random() * 10) + 0);
-console.log(x);
+console.log(x)
 
 function cuentaAtras(){
     var segundos = 6;

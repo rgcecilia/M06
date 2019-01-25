@@ -144,8 +144,7 @@ function limpia(){
 /**
  * Funcion para guardar en cookies los datos del formulario
  */
-function guarda(){
-    
+function guarda(){ 
   var fomulario = document.forms["miForm"];
   var usuario = fomulario["inputNombre"].value;
   setCookie("inputNombre", usuario, 3 );
