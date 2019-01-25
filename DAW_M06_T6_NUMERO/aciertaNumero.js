@@ -37,32 +37,6 @@ function ini() {
  * aciertaNumeroXML.php, la respuesta xml
  * la enviamos a la funcion recibeNumeroXml()
  */
-function inicioXml(){
-    var xmlHttp = new XMLHttpRequest();
-    var urlDestino="aciertaNumeroXML.php?inicio=si";
-    xmlHttp.open("GET",urlDestino,true);
-    xmlHttp.setRequestHeader("Content-Type", "application/x-www-formurlencoded");
-    xmlHttp.onreadystatechange = function(){
-        if(xmlHttp.readyState === 4){
-            recibeNumeroXml(xmlHttp);
-        }
-    };
-    xmlHttp.send(null);
-}
-
-/*
- * Recibe una respuesta Ajax en formato xml 
- * y la muestra por consola y pantalla
- * @param {ajax} xmlHttp
- */
-function recibeNumeroXml(xmlHttp){
-        if(xmlHttp.status === 200) {
-        var respuesta = xmlHttp.responseXML;
-        var numero = respuesta.getElementsByTagName("inicio");
-        document.getElementById("mensaje").innerHTML = "Se ha generado un nuevo numero";
-        console.log(numero[0].innerHTML);
-    }
-}
 
 /** 
  * Con esta función enviamos una peticion 
